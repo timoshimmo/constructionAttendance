@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_primary"
+    tools:context=".ui.start.StartActivity">
+
+    <LinearLayout
+        android:id="@+id/landing_top_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_taieri_pattern"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/landing_bottom_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/landing_top_area">
+
+        <TextView
+            android:id="@+id/tv_landing_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jost"
+            android:gravity="center"
+            android:text="@string/str_landing_title"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_landing_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/jost"
+            android:gravity="center"
+            android:text="@string/str_landing_subtitle"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:id="@+id/btn_go_to_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:backgroundTint="@color/yellow_primary"
+                android:fontFamily="@font/jost"
+                android:text="@string/str_signup"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_contrast"
+                android:textSize="16sp"
+                app:cornerRadius="6dp"
+                app:rippleColor="@color/yellow_variant" />
+
+            <TextView
+                android:id="@+id/tv_go_to_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_plain_click_style"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/str_login"
+                android:textAllCaps="true"
+                android:textColor="@color/yellow_primary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "699188721576",
+    "project_id": "mobiletrac-541ab",
+    "storage_bucket": "mobiletrac-541ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699188721576:android:b18f1d32237aa29dfecf9d",
+        "android_client_info": {
+          "package_name": "app.com.android.mobiletrac.construction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699188721576-6ife78s8gphmhbjb597uubt09ak5h1ta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.com.android.mobiletrac.construction",
+            "certificate_hash": "a558cee9fe22a97def2d19e47b336e43a07113b1"
+          }
+        },
+        {
+          "client_id": "699188721576-90u5imin2b74nmjtlg7rlf8onjgvrjh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqVNeOVTWFTOmdPRE78_Y3HBvBRXOTXzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699188721576-90u5imin2b74nmjtlg7rlf8onjgvrjh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

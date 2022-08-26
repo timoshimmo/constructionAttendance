@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_primary"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="20dp"
+    tools:context=".ui.register.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/btnSpBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_plain_click_style"
+        android:drawableStart="?attr/homeAsUpIndicator"
+        android:paddingStart="0dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/string_back"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registrationBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSpBack">
+
+        <LinearLayout
+            android:id="@+id/cnr_login_top_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableTop="@drawable/ic_signup_top"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/jost"
+                android:text="@string/str_signup_title"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spFormLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cnr_login_top_area">
+
+            <TextView
+                android:id="@+id/tvSpFnameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_firstname"
+                android:textColor="@color/gray_secondary_dark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etSpFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/gray_secondary_dark"
+                android:hint="@string/prompt_firstname"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_secondary_dark"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/tvSpEmailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/str_email"
+                android:textColor="@color/gray_secondary_dark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etSpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/gray_secondary_dark"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_secondary_dark"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/tvSpMobileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/str_mobile"
+                android:textColor="@color/gray_secondary_dark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etSpMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/gray_secondary_dark"
+                android:hint="@string/prompt_phone"
+                android:inputType="phone"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_secondary_dark"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/tvSpPasswordTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/str_password"
+                android:textColor="@color/gray_secondary_dark"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etSpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray_secondary_dark"
+                android:hint="@string/prompt_password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_secondary_dark"
+                android:textCursorDrawable="@null" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btnArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:visibility="visible">
+
+                <ProgressBar
+                    android:id="@+id/sploading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="start"
+                    android:elevation="2dp"
+                    android:enabled="false"
+                    android:fontFamily="@font/jost"
+                    android:text="@string/str_signup"
+                    android:textColor="@color/gray_contrast"
+                    android:textSize="16sp"
+                    android:theme="@style/AccentButton"
+                    app:cornerRadius="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rippleColor="@color/yellow_variant" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/lytSignUpInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvRegSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/success"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/jost"
+            android:gravity="center_horizontal"
+            android:text="@string/str_registration_complete"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tvSignUpInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/str_signup_email_sent_info"
+            android:textColor="@color/gray_secondary_dark"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvValidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:fontFamily="@font/jost"
+                android:text="@string/str_validate_question"
+                android:textColor="@color/gray_secondary_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvValidateLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost"
+                android:text="@string/str_login"
+                android:textColor="@color/yellow_primary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

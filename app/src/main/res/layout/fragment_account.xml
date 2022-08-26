@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accountFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_primary"
+    android:paddingTop="10dp"
+    android:paddingBottom="30dp"
+    tools:context=".ui.home.fragments.profile.account.AccountFragment">
+
+    <LinearLayout
+        android:id="@+id/lytAccountHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/btnAccountBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_plain_click_style"
+            android:backgroundTint="@color/gray_primary"
+            android:drawableStart="?attr/homeAsUpIndicator"
+            android:elevation="0dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="0dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/string_back"
+            android:textColor="@color/white"
+            app:iconTint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvAccountNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/jost"
+            android:text="@string/str_user_profile_title"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dvrAccountHeader"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lytAccountHeader" />
+
+    <LinearLayout
+        android:id="@+id/spFormLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dvrAccountHeader">
+
+        <TextView
+            android:id="@+id/tvAcctFullNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_firstname"
+            android:textColor="@color/gray_secondary_dark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etAcctFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:backgroundTint="@color/gray_secondary_dark"
+            android:hint="@string/prompt_firstname"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_secondary_dark"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/tvAcctMobileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/str_mobile"
+            android:textColor="@color/gray_secondary_dark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etAcctMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:backgroundTint="@color/gray_secondary_dark"
+            android:hint="@string/prompt_phone"
+            android:inputType="phone"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_secondary_dark"
+            android:textCursorDrawable="@null" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnAcctArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/acctLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnUpdateAccount"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="start"
+                android:elevation="2dp"
+                android:enabled="true"
+                android:fontFamily="@font/jost"
+                android:text="@string/str_update_profile"
+                android:textColor="@color/gray_contrast"
+                android:textSize="16sp"
+                android:theme="@style/AccentButton"
+                app:cornerRadius="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="@color/yellow_variant" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

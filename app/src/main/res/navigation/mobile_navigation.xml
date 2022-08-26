@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="app.com.android.mobiletrac.construction.ui.home.fragments.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="app.com.android.mobiletrac.construction.ui.home.fragments.history.HistoryFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="app.com.android.mobiletrac.construction.ui.home.fragments.profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_account"
+            app:destination="@id/navigation_account" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_change_password"
+            app:destination="@id/navigation_change_password" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="app.com.android.mobiletrac.construction.ui.home.fragments.profile.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_change_password"
+        android:name="app.com.android.mobiletrac.construction.ui.home.fragments.profile.password.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_navigation_change_password_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+</navigation>

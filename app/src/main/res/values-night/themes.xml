@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MobileTrac" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow_primary</item>
+        <item name="colorPrimaryVariant">@color/yellow_variant</item>
+        <item name="colorOnPrimary">@color/gray_contrast</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gray_secondary</item>
+        <item name="colorSecondaryVariant">@color/gray_secondary_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AccentButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorAccent">@color/gray_shade</item>
+        <item name="android:colorButtonNormal">@color/yellow_primary</item>
+    </style>
+</resources>

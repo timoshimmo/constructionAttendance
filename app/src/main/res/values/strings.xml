@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">MobileTrac</string>
+    <string name="str_landing_title">Monitor your attendance on construction site</string>
+    <string name="str_landing_subtitle">No more struggle, striving or even trying it\'s just better</string>
+    <string name="str_signin">Sign in</string>
+    <string name="str_get_started">Get Started</string>
+    <string name="str_login">Login</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_phone">+6xxxxxxxxx</string>
+    <string name="prompt_password">******</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid email</string>
+    <string name="invalid_password">Password must be 5 characters or more</string>
+    <string name="invalid_name">Name must be more than 4 characters</string>
+    <string name="invalid_mobile">Not a valid mobile number</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="str_login_continue">Please login to continue</string>
+    <string name="str_mobile">Mobile</string>
+    <string name="str_password">Password</string>
+    <string name="str_signup_title">Create your account</string>
+    <string name="str_firstname">Full Name</string>
+    <string name="prompt_firstname">e.g John Doe</string>
+    <string name="str_email">Email</string>
+    <string name="prompt_email">user@email.com</string>
+    <string name="str_signup">Sign Up</string>
+    <string name="str_signup_email_sent_info">A validation link has been sent to your email. Please click on the link to complete registration</string>
+    <string name="str_btn_cdesc_backarrow">Button for back navigation</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="str_validate_question">Validated account?</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="str_title_history">History</string>
+    <string name="str_home_greeting_title">MobileTrac App</string>
+    <string name="str_home">Home</string>
+    <string name="str_last_online_title">Last Online Date/Time</string>
+    <string name="str_offline">Offline</string>
+    <string name="str_online">Online</string>
+    <string name="str_go_online">Go Online</string>
+    <string name="str_online_status_title">Online Status</string>
+    <string name="img_home_top_qr_location_desc"><![CDATA[<a href=\"https://www.flaticon.com/free-icons/maps-and-location\" title=\"maps-and-location icons\">Maps-and-location icons created by toempong - Flaticon</a>]]></string>
+    <string name="str_check_in">Check In</string>
+    <string name="str_check_out">Check Out</string>
+    <string name="btn_check_in_desc"><![CDATA[<a href="https://www.flaticon.com/free-icons/door" title="door icons">Door icons created by Icongeek26 - Flaticon</a>]]></string>
+    <string name="str_check_out_desc"><![CDATA[<a href=\"https://www.flaticon.com/free-icons/check-out\" title=\"check-out icons\">Check-out icons created by Icongeek26 - Flaticon</a>]]></string>
+    <string name="str_recent_logs">Recent Logs</string>
+    <string name="str_registration_complete">Registration Completed</string>
+    <string name="str_not_found_msg">No logs has been created. Do a check-in or check-out to generate logs</string>
+    <string name="str_not_found_content_desc"><![CDATA[<a href=\"https://www.flaticon.com/free-icons/page-not-found\" title=\"page not found icons\">Page not found icons created by Pixel perfect - Flaticon</a>]]></string>
+    <string name="str_history">History</string>
+    <string name="str_no_history">No history found</string>
+    <string name="str_profile">Profile</string>
+    <string name="str_user_account">USER ACCOUNT</string>
+    <string name="str_profile_right_arrow_desc">Right arrow for profile rows</string>
+    <string name="str_settings">SETTINGS</string>
+    <string name="str_change_password">Change Password</string>
+    <string name="str_change_pass_subtitle">Update your current password</string>
+    <string name="str_help_support"><![CDATA[Help & Support]]></string>
+    <string name="str_help_support_subtitle">Find answers to your questions</string>
+    <string name="str_about">About</string>
+    <string name="str_about_subtitle">Learn more about us</string>
+    <string name="str_signout">Sign Out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_back">Back</string>
+    <string name="str_update_profile">Update Profile</string>
+    <string name="str_current_password">Current Password</string>
+    <string name="str_new_password">New Password</string>
+    <string name="str_confirm_new_password">Confirm New Password</string>
+    <string name="str_change_password_hint">************</string>
+    <string name="str_save">Save</string>
+    <string name="str_change_your_password">Change your password</string>
+    <string name="invalid_confirm_password">Passwords do not match</string>
+    <string name="str_version_number">v1.0.0</string>
+    <string name="str_user_profile_title">Profile Account</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="str_forgot_password_title">Forgot Password?</string>
+    <string name="str_password_reset_successful">Reset Password Email Sent</string>
+    <string name="str_reset_password_msg">A reset password link has been emailed to you. Click the link to setup your new password</string>
+    <string name="str_password_reset_question">Password reset?</string>
+    <string name="str_reset_password">Reset Password</string>
+    <string name="str_send_reset">Confirm Email</string>
+    <string name="str_img_text_reset_email_success"><![CDATA[<a href=\"https://www.flaticon.com/free-icons/send\" title=\"send icons\">Send icons created by Anggara - Flaticon</a>]]></string>
+    <string name="str_splash_icon_desc"><![CDATA[<a href=\"https://www.flaticon.com/free-icons/maps-and-location\" title=\"maps and location icons\">Maps and location icons created by toempong - Flaticon</a>]]></string>
+    <string name="str_splash_app_name">MOBILETRAC</string>
+</resources>
